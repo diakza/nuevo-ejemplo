@@ -44,5 +44,20 @@ public class ClaseDiego {
                 break;
 
         }
+    
+    
+     Scanner input = new Scanner(System.in);
+        // Get the three numbers from the user.
+        System.out.println("Enter three numbers:");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        int num3 = input.nextInt();
+        // Find the largest number.
+        int largest = Math.max(num1, Math.max(num2, num3));
+        // Find the smallest number.
+        int smallest = Math.min(num1, Math.min(num2, num3));
+        // Print the results.
+        System.out.println("The largest number is " + largest);
+        System.out.println("The smallest number is " + smallest);
     }
 }
